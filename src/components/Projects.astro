@@ -1,0 +1,119 @@
+---
+import NextJS from "../icons/NextJS.astro"
+import Tailwind from "../icons/Tailwind.astro"
+import Angular from "../icons/Angular.astro"
+import AstroIcon from "../icons/AstroIcon.astro"
+import Flutter from "../icons/Flutter.astro"
+import Spring from "../icons/Spring.astro"
+import SocialPill from "../components/SocialPill.astro"
+import GithubIcon from "../icons/Github.astro"
+import TableRowIcon from "../icons/TableRow.astro"
+import TypeScript from "@/icons/TypeScript.astro"
+import VisualCode from "@/icons/VisualCode.astro"
+import { geti18n } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = geti18n({currentLocale})
+
+const TAGS = {
+    NEXT: {
+        name: "Next.js",
+        class: "bg-black text-white",
+        icon: NextJS,
+    },
+    TAILWIND: {
+        name: "Tailwind CSS",
+        class: "bg-[#003159] text-white",
+        icon: Tailwind,
+    },
+    ANGULAR: {
+        name: "Angular",
+        class: "bg-red-600 text-white",
+        icon: Angular,
+    },
+    ASTRO: {
+        name: "Astro",
+        class: "bg-black text-white",
+        icon: AstroIcon,
+    },
+    FLUTTER: {
+        name: "Flutter",
+        class: "bg-blue-900 text-white",
+        icon: Flutter,
+    },
+    SPRING: {
+        name: "Spring Boot",
+        class: "bg-green-900 text-white",
+        icon: Spring,
+    },
+    TYPESCRIPT: {
+        name: "TypeScript",
+        class: "bg-blue-900 text-white",
+        icon: TypeScript,
+    },
+    VSCODE: {
+        name: "VSCode",
+        class: "bg-blue-900 text-white",
+        icon: VisualCode,
+    }
+}
+
+
+const tags = {
+    0: [TAGS.TYPESCRIPT, TAGS.VSCODE],
+    1: [TAGS.NEXT, TAGS.TAILWIND],
+}
+
+const PROJECTS = i18n.PROJECTS_LIST.map((project) => {
+    return {
+        title: project.title,
+        description: project.description,
+        image: project.image,
+        github: project.github,
+        link: project.link,
+        tags: tags[project.id]
+    }
+})
+---
+
+<section class="flex flex-col gap-y-16">
+    {
+        PROJECTS.map(({title, description, image, github, link, tags}) => {
+            return (
+                <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+                    <div class="w-full md:w-1/2">
+                        <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+                            <img loading="lazy" class="object-cover object-top w-full h-full transition duration-500 group-hover:scale-105" src={image} alt={`Captura de pantalla del proyecto ${image}`}>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 md:max-w-lg">
+                        <h3 class="text-2xl font-semibold dark:text-orange-300 text-green-600 mb-2">{title}</h3>
+                        <ul class="flex gap-x-2 flex-row my-4">
+                            {tags.map((tag) => 
+                                <li>
+                                    <span class={`flex gap-2 rounded-full text-xs ${tag.class} py-2 px-3`}>
+                                        <tag.icon class="size-4" />
+                                        {tag.name}
+                                    </span>
+                                </li>
+                            )}
+                        </ul>
+                        <p class="mt-2 text-gray-800 dark:text-gray-400 text-sm text-pretty">{description}</p>
+                        <footer class="flex mt-4 gap-x-4 items-end justify-start">
+                            { github && <SocialPill href={github}>
+                                <GithubIcon class="size-4 md:size-6"></GithubIcon>
+                                {i18n.BUTTON_CODE}
+                            </SocialPill>
+                            }
+                            { link && <SocialPill href={link}>
+                                <TableRowIcon class="size-4 md:size-6"></TableRowIcon>
+                                {i18n.BUTTON_PROYECT}
+                            </SocialPill>
+                            }   
+                        </footer>
+                    </div>
+                </article>
+            )
+        })
+    }
+</section >

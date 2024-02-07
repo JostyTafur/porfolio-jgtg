@@ -1,0 +1,50 @@
+---
+import Briefcase from '../icons/Briefcase.astro'
+import SocialPill from './SocialPill.astro'
+import ArrowRight from '../icons/ArrowRight.astro'
+import Book from '@/icons/Book.astro'
+import { geti18n } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = geti18n({currentLocale})
+
+interface Props {
+  title: string
+  description: string
+  date: string
+  link?: string
+}
+
+ const { title, description, date, link } = Astro.props
+
+ 
+---
+
+<span
+  class="mt-2 absolute flex items-center justify-center size-4 bg-gray-300 rounded-full -start-2 ring-8 ring-gray-300 dark:ring-gray-700 dark:bg-gray-700"
+>
+  <Book class="w-4 h-4 text-black dark:text-white" />
+</span>
+<h3
+  class="flex items-center mb-1 text-lg font-bold text-green-600 dark:text-yellow-200/90 px-3"
+>
+  {title}
+</h3>
+<time
+  class="block mb-2 mx-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-600"
+  >{date}</time
+>
+<p class="text-black dark:text-white mb-4 mx-3 text-base font-normal text-white-500 dark:text-white-400 text-pretty">
+  {description}
+</p>
+
+{
+    link && (
+        <div class="flex">
+          <SocialPill href={link}>
+            {i18n.SABER_MAS}
+            <ArrowRight class="size-3 md:size-4" />
+          </SocialPill>
+        </div>
+    )
+}

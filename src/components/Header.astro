@@ -1,0 +1,136 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+import { geti18n } from "../i18n/";
+import LanguageSelector from "./LanguageSelector.astro";
+
+const { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
+
+const navItems = [
+  {
+    title: i18n.FORMACION_NAV,
+    label: "formacion",
+    url: "#experience",
+  },
+  {
+    title: i18n.PROYECTOS_NAV,
+    label: "proyectos",
+    url: "#proyectos",
+  },
+  {
+    title: i18n.SOBRE_MI_NAV,
+    label: "sobre-mi",
+    url: "#about-me",
+  },
+];
+---
+
+<header
+  class="fixed top-0 right-5 z-10 flex flex-col items-end sm:items-center justify-center w-full mx-auto mt-2 gap-x-5"
+>
+  <button
+    class="sm:hidden text-gray-900 dark:text-gray-200"
+    id="menu-nav"
+    aria-label="Toggle menu"
+  >
+    <svg
+      class="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+  </button>
+  <section class="hidden sm:flex items-center rounded-md sm:rounded-full px-2 bg-transparent mt-2 sm:mt-0">
+    <nav
+      class="sm:w-full sm:relative sm:top-0 flex flex-col sm:flex-row text-sm font-medium sm:rounded-full rounded-md text-gray-600 dark:text-gray-200 justify-center items-end sm:items-center"
+    >
+      {
+        navItems.map((link) => (
+          <a
+            class="relative block px-2 py-2 transition hover:text-green-500 dark:hover:text-yellow-300"
+            aria-label={link.label}
+            href={link.url}
+          >
+            {link.title}
+          </a>
+        ))
+      }
+    </nav>
+    <div
+      class="py-2 sm:py-0 flex justify-end sm:justify-center items-center gap-x-2 rounded-full px-2 text-gray-600 dark:text-gray-200"
+    >
+      <ThemeToggle />
+      <LanguageSelector />
+    </div>
+  </section>
+</header>
+<script is:inline>
+  const nav = document.querySelector("section");
+  document.getElementById("menu-nav").addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (nav.classList.contains("hidden")) {
+      nav.classList.remove("hidden");
+    } else {
+      nav.classList.add("hidden");
+    }
+  });
+
+  document.addEventListener("click", () => nav.classList.add("hidden"));
+</script>
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll("header nav a");
+
+    const callback = (entries: any[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navItems.forEach((item) => {
+            if (item.getAttribute("aria-label") == entry.target.id) {
+              item.classList.add("text-yellow-500");
+            } else {
+              item.classList.remove("text-yellow-500");
+            }
+          });
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    });
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Cleanup function
+    document.onvisibilitychange = () => {
+      if (document.visibilityState === "hidden") {
+        observer.disconnect();
+      }
+    };
+  });
+</script>
+
+<style>
+  section {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur-xl bg-gray-300/10 ring-white/10;
+    }
+  }
+</style>

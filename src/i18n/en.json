@@ -1,0 +1,48 @@
+{
+  "SEO_TITLE": "Portfolio of Josty Tafur - Software Engineer",
+  "SEO_DESCRIPTION": "Portfolio of Josty Tafur, Student of eighth semester at Universidad Peruana de Ciencias Aplicadas, eager to learn and improve professionally",
+  "HOME_TITLE": "Hey, I'm Josty Tafur",
+  "HOME_SUBTITLE": "<span class='text-yellow-300'>Software Engineering Student</span> at the Peruvian University of Applied Sciences (UPC), <span class='text-orange-300'>FullStack </span>. From Lima, Peru 🇵🇪.",
+  "BADGE_TEXT": "Available for work",
+  "CONTACT": "Contact me",
+  "FORM_ACADEMICA": "Academic Formation",
+  "PROYECTOS": "Projects",
+  "SOBRE_MI": "About me",
+  "FORMACION_NAV": "Formation",
+  "PROYECTOS_NAV": "Projects",
+  "SOBRE_MI_NAV": "About me",
+  "CONTACTO_NAV": "Contact",
+  "SABER_MAS": "Know more",
+  "EXPERIENCE": [
+    {
+      "title": "Software Engineering",
+      "date": "2020 - Present",
+      "description": "Eighth cycle student at the Peruvian University of Applied Sciences (UPC) studying Software Engineering. Currently, I am looking for pre-professional internships in the area of web development."
+    },
+    {
+      "title": "Python for EveryBody",
+      "date": "August 2022 - December 2022",
+      "description": "Python course taught by the University of Michigan on Coursera. I learned how to program in Python and use it to solve real problems. In addition, I learned how to use tools like Jupyter Notebook and GitHub."
+    },
+    {
+      "title": "Art for Videogames",
+      "date": "August 2022 - December 2022",
+      "description": "Digital art course taught by the University of Michigan on Coursera. I learned how to use tools like Photoshop and Blender to create digital art and apply video game design techniques."
+    }
+  ],
+  "PROJECTS_LIST": [
+    {
+      "id": 0,
+      "title": "CSS through HTML Extension",
+      "description": "The CSS through HTML extension for Visual Studio Code allows you to quickly generate CSS rules, improving efficiency in the development of your web projects. It's written in TypeScript and uses the VSCode API to interact with the editor.",
+      "link": "https://marketplace.visualstudio.com/items?itemName=JostyTafur.css-through-html",
+      "github": "https://github.com/JostyTafur/html-to-css",
+      "image": "../../images/css-through-html.webp"
+    }
+  ],
+  "BUTTON_CODE": "Code",
+  "BUTTON_PROYECT": "See project",
+  "ABOUT_ME_FIRST_P": "My name is Josty Tafur Gonzales and I am studying <strong>Software Engineering</strong>. I decided to enter this world because I really enjoy programming and I like the idea of <strong>creating applications that can help people.</strong>",
+  "ABOUT_ME_SECOND_P": "I love developing web applications and I always worry about the design and architecture of an application before creating it. In this way, I have helped many colleagues in the creation of their projects, teaching and learning from them too.",
+  "ABOUT_ME_THIRD_P": "My curiosity has led me to learn about different topics, such as <strong>Machine Learning, artificial intelligence, creation of extensions in VS Code, design of assets for video games, cybersecurity</strong>, among others."
+}
