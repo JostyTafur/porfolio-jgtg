@@ -59,9 +59,8 @@ const TAGS = {
 }
 
 
-const tags = {
-    0: [TAGS.TYPESCRIPT, TAGS.VSCODE],
-    1: [TAGS.NEXT, TAGS.TAILWIND],
+const tags:Record<string, any> = {
+    "0": [TAGS.TYPESCRIPT, TAGS.VSCODE]
 }
 
 const PROJECTS = i18n.PROJECTS_LIST.map((project) => {
@@ -89,7 +88,7 @@ const PROJECTS = i18n.PROJECTS_LIST.map((project) => {
                     <div class="w-full md:w-1/2 md:max-w-lg">
                         <h3 class="text-2xl font-semibold dark:text-orange-300 text-green-600 mb-2">{title}</h3>
                         <ul class="flex gap-x-2 flex-row my-4">
-                            {tags.map((tag) => 
+                            {tags.map((tag:any) => 
                                 <li>
                                     <span class={`flex gap-2 rounded-full text-xs ${tag.class} py-2 px-3`}>
                                         <tag.icon class="size-4" />

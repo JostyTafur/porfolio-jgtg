@@ -33,7 +33,7 @@
   ],
   "PROJECTS_LIST": [
     {
-      "id": 0,
+      "id": "0",
       "title": "CSS through HTML Extension",
       "description": "La extensión CSS a través de HTML para Visual Studio Code le permite generar rápidamente reglas CSS, mejorando la eficiencia en el desarrollo de sus proyectos web. Está escrito en TypeScript y utiliza la API VSCode para interactuar con el editor.",
       "link": "https://marketplace.visualstudio.com/items?itemName=JostyTafur.css-through-html",

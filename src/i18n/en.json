@@ -32,7 +32,7 @@
   ],
   "PROJECTS_LIST": [
     {
-      "id": 0,
+      "id": "0",
       "title": "CSS through HTML Extension",
       "description": "The CSS through HTML extension for Visual Studio Code allows you to quickly generate CSS rules, improving efficiency in the development of your web projects. It's written in TypeScript and uses the VSCode API to interact with the editor.",
       "link": "https://marketplace.visualstudio.com/items?itemName=JostyTafur.css-through-html",
