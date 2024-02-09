@@ -1,0 +1,54 @@
+---
+import Badge from "../components/Badge.astro";
+import LinkedinIcon from "../icons/Linkedin.astro";
+import GithubIcon from "../icons/Github.astro";
+import SocialPill from "../components/SocialPill.astro";
+import MailIcon from "../icons/Mail.astro";
+import FileCV from "@/icons/FileCV.astro";
+
+import { geti18n } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = geti18n({currentLocale})
+---
+
+
+<div class="flex flex-row items-center gap-x-4 mb-8">
+  <img
+    class="rounded-full size-24 md:size-14 self-center md:self-start"
+    src="/images/profile-pixelart.webp"
+    alt="Josty Tafur pixel-art"
+  />
+  <a
+    href="../../docs/Curriculum_Vitae_Josty_Tafur.pdf"
+    target="_blank"
+    rel="noopener"
+    class="flex justify-center items-center hover:scale-105 transition"
+  >
+    <Badge>
+      {i18n.BADGE_TEXT}
+      <FileCV class="hidden md:block md:size-4 lg:size-6" />
+    </Badge>
+  </a>
+</div>
+<h1
+  class="text-black dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold pb-6 lg:pb-10 [&>span]:text-green-600 dark:[&>span]:text-orange-300"
+  set:html={i18n.HOME_TITLE}
+/>
+
+<h2
+  class="text-black dark:text-white text-xl lg:text-2xl max-w-[700px] text-pretty [&>span]:text-orange-400 dark:[&>span]:text-yellow-200"
+  set:html={i18n.HOME_SUBTITLE}
+/>
+<nav class="flex gap-4 mt-8 flex-wrap">
+  <SocialPill href="mailto:jostytg0@gmail.com">
+    <MailIcon class="size-4 md:size-6" />
+    {i18n.CONTACT}
+  </SocialPill>
+  <SocialPill href="https://www.linkedin.com/in/josty-gerardo-tafur-gonzales/">
+    <LinkedinIcon class="size-4 md:size-6" /> Linkedin
+  </SocialPill>
+  <SocialPill href="https://github.com/JostyTafur">
+    <GithubIcon class="size-4 md:size-6" /> Github
+  </SocialPill>
+</nav>

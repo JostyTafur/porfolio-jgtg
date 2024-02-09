@@ -12,14 +12,14 @@ const THEMES = ["Light", "Dark", "System"]
     class="appearance-none border-none flex hover:text-green-500 dark:hover:text-yellow-400"
   >
     <span class="sr-only">Elige el tema</span>
-    <SunIcon id="light" class="theme-toggle-icon size-5 transition-all" />
+    <SunIcon id="light" class="theme-toggle-icon size-6 sm:size-5 transition-all" />
     <MoonIcon
       id="dark"
-      class="theme-toggle-icon absolute size-5 transition-all"
+      class="theme-toggle-icon absolute size-6 sm:size-5 transition-all"
     />
     <SystemIcon
       id="system"
-      class="theme-toggle-icon absolute size-5 transition-all"
+      class="theme-toggle-icon absolute size-6 sm:size-5 transition-all"
     />
   </button>
   <div
@@ -29,7 +29,7 @@ const THEMES = ["Light", "Dark", "System"]
     <ul>
       {
         THEMES.map((theme) => (
-          <li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm">
+          <li class="text-lg sm:text-base themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm">
             {theme}
           </li>
         ))

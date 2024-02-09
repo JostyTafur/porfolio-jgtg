@@ -1,7 +1,7 @@
 {
   "SEO_TITLE": "Portfolio of Josty Tafur - Software Engineer",
   "SEO_DESCRIPTION": "Portfolio of Josty Tafur, Student of eighth semester at Universidad Peruana de Ciencias Aplicadas, eager to learn and improve professionally",
-  "HOME_TITLE": "Hey, I'm Josty Tafur",
+  "HOME_TITLE": "Hey, I'm <span>Josty Tafur</span>",
   "HOME_SUBTITLE": "<span class='text-yellow-300'>Software Engineering Student</span> at the Peruvian University of Applied Sciences (UPC), <span class='text-orange-300'>FullStack </span>. From Lima, Peru 🇵🇪.",
   "BADGE_TEXT": "Available for work",
   "CONTACT": "Contact me",
@@ -9,9 +9,11 @@
   "PROYECTOS": "Projects",
   "SOBRE_MI": "About me",
   "FORMACION_NAV": "Formation",
+  "FORMACION_LINK": "/en/#experience",
   "PROYECTOS_NAV": "Projects",
+  "PROYECTOS_LINK": "/en/#projects",
   "SOBRE_MI_NAV": "About me",
-  "CONTACTO_NAV": "Contact",
+  "SOBRE_MI_LINK": "/en/#about-me",
   "SABER_MAS": "Know more",
   "EXPERIENCE": [
     {
@@ -28,6 +30,11 @@
       "title": "Art for Videogames",
       "date": "August 2022 - December 2022",
       "description": "Digital art course taught by the University of Michigan on Coursera. I learned how to use tools like Photoshop and Blender to create digital art and apply video game design techniques."
+    },
+    {
+      "title": "Taller de Liderazgo I y II",
+      "date": "August 2021 - August 2022",
+      "description": "Leadership workshop taught by the Peruvian University of Applied Sciences (UPC). I learned about leadership, teamwork, and communication."
     }
   ],
   "PROJECTS_LIST": [
@@ -44,5 +51,7 @@
   "BUTTON_PROYECT": "See project",
   "ABOUT_ME_FIRST_P": "My name is Josty Tafur Gonzales and I am studying <strong>Software Engineering</strong>. I decided to enter this world because I really enjoy programming and I like the idea of <strong>creating applications that can help people.</strong>",
   "ABOUT_ME_SECOND_P": "I love developing web applications and I always worry about the design and architecture of an application before creating it. In this way, I have helped many colleagues in the creation of their projects, teaching and learning from them too.",
-  "ABOUT_ME_THIRD_P": "My curiosity has led me to learn about different topics, such as <strong>Machine Learning, artificial intelligence, creation of extensions in VS Code, design of assets for video games, cybersecurity</strong>, among others."
+  "ABOUT_ME_THIRD_P": "My curiosity has led me to learn about different topics, such as <strong>Machine Learning, artificial intelligence, creation of extensions in VS Code, design of assets for video games, cybersecurity</strong>, among others.",
+  "PAGE_NOT_FOUND": "Page not found",
+  "BACK_HOME": "Back to home"
 }

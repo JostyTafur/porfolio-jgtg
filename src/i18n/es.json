@@ -10,9 +10,11 @@
   "PROYECTOS": "Proyectos",
   "SOBRE_MI": "Sobre mi",
   "FORMACION_NAV": "Formación",
+  "FORMACION_LINK": "/#experience",
   "PROYECTOS_NAV": "Proyectos",
+  "PROYECTOS_LINK": "/#projects",
   "SOBRE_MI_NAV": "Sobre mÍ",
-  "CONTACTO_NAV": "Contacto",
+  "SOBRE_MI_LINK": "/#about-me",
   "SABER_MAS": "Saber más",
   "EXPERIENCE": [
     {
@@ -29,6 +31,11 @@
       "title": "Art for Videogames",
       "date": "Agosto 2022 - Diciembre 2022",
       "description": "Curso de arte digital dictado por la Universidad de Michigan en Coursera. Aprendí a utilizar herramientas como Photoshop y Blender para crear arte digital y a aplicar técnicas de diseño de videojuegos."
+    },
+    {
+      "title": "Taller de Liderazgo I y II",
+      "date": "Agosto 2021 - Agosto 2022",
+      "description": "Cursos de liderazgo dictados por la Universidad Peruana de Ciencias Aplicadas (UPC). Aprendí a trabajar en equipo, a liderar proyectos y a tomar decisiones en situaciones de incertidumbre."
     }
   ],
   "PROJECTS_LIST": [
@@ -45,5 +52,7 @@
   "BUTTON_PROYECT": "Ver proyecto",
   "ABOUT_ME_FIRST_P": "Me llamo Josty Tafur Gonzales y estoy estudiando la carrera de <strong>Ingenieria de Software</strong>. Decidí ingresar a este mundo porque me disfruto mucho programando y me gusta la idea de <strong>crear aplicaciones que puedan ayudar a las personas.</strong>",
   "ABOUT_ME_SECOND_P": "Me encanta desarrollar aplicaciones web y siempre <strong>me preocupo por el diseño y arquitectura</strong> de una aplicación antes de crearla. De esta manera, he ayudado a muchos compañeros en la creación de sus proyectos, enseñando y aprendiendo de ellos tambien.",
-  "ABOUT_ME_THIRD_P": "Mi curiosidad me ha llevado a aprender sobre diferentes temas, tales como <strong>Machine Learning, inteligencia artificial, creacion de extensiones en VS Code, diseño de assets para videojuegos, ciberseguridad</strong>, entre otros."
+  "ABOUT_ME_THIRD_P": "Mi curiosidad me ha llevado a aprender sobre diferentes temas, tales como <strong>Machine Learning, inteligencia artificial, creacion de extensiones en VS Code, diseño de assets para videojuegos, ciberseguridad</strong>, entre otros.",
+  "PAGE_NOT_FOUND": "Página no encontrada",
+  "BACK_HOME": "Volver a casa"
 }

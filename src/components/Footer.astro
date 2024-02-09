@@ -1,21 +1,38 @@
 ---
 const currentYear = new Date().getFullYear();
 ---
+
 <footer
-  class="rounded-xl shadow m-4 bg-black/5 dark:bg-black/20 backdrop-blur-lg w-full xl:w-[1120px] mx-auto mb-10"
+  class="rounded-xl shadow m-4 bg-black/5 dark:bg-black/20 backdrop-blur-lg w-full lg:w-[870px] mx-auto mb-10"
 >
   <div
-    class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+    class="w-full mx-auto max-w-screen-xl p-4 flex flex-col sm:flex-row items-center sm:justify-between"
   >
-    <span
-      class="text-sm sm:text-center text-green-600 dark:text-yellow-200/90"
-      >© {currentYear} <a href="https://midu.dev/" class="hover:underline">Josty Tafur</a>.
+    <span class="text-sm text-green-600 dark:text-yellow-200/90"
+      >© {currentYear}
+      <a href="https://midu.dev/" class="hover:underline">Josty Tafur</a>.
     </span>
     <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium  text-green-600 dark:text-yellow-200/90 sm:mt-0"
+      class="flex items-center justify-center mt-3 text-sm font-medium text-green-600 dark:text-yellow-200/90 sm:mt-0"
     >
-      <li><a href="mailto:jostytg0@outlook.com" target="_blank" class="hover:underline me-4 md:me-6">Outlook</a></li>
-      <li><a href="https://wa.me/51994058450?text=Hola" target="_blank" class="hover:underline">Whatsapp</a></li>
+      <li>
+        <a
+          href="mailto:jostytg0@outlook.com"
+          target="_blank"
+          class="hover:underline me-4 sm:me-6">Outlook</a>
+      </li>
+      <li>
+        <a
+          href="https://wa.me/51994058450?text=Hola"
+          target="_blank"
+          class="hover:underline me-4 sm:me-6">Whatsapp</a>
+      </li>
+      <li>
+        <a
+          href="../../docs/Curriculum_Vitae_Josty_Tafur.pdf"
+          target="_blank"
+          class="hover:underline">CV</a>
+      </li>
     </ul>
   </div>
 </footer>

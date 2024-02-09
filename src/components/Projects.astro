@@ -98,7 +98,7 @@ const PROJECTS = i18n.PROJECTS_LIST.map((project) => {
                             )}
                         </ul>
                         <p class="mt-2 text-gray-800 dark:text-gray-400 text-sm text-pretty">{description}</p>
-                        <footer class="flex mt-4 gap-x-4 items-end justify-start">
+                        <footer class="flex flex-wrap mt-4 gap-x-4 gap-y-4 items-end justify-start">
                             { github && <SocialPill href={github}>
                                 <GithubIcon class="size-4 md:size-6"></GithubIcon>
                                 {i18n.BUTTON_CODE}

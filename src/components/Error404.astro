@@ -1,0 +1,25 @@
+---
+import Layout404 from "@/layouts/Layout404.astro";
+import { geti18n } from "@/i18n";
+import SectionContainer from "./SectionContainer.astro";
+import SocialPill from "./SocialPill.astro";
+import ArrowLeft from "../icons/ArrowLeft.astro";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const i18n = geti18n({ currentLocale: lang });
+const translatePath = useTranslatedPath(lang);
+---
+
+<Layout404>
+    <SectionContainer class="flex flex-col justify-center items-center h-screen">
+        <h1 class="text-black dark:text-white text-2xl sm:text-5xl font-bold mb-4 flex">
+            Error 404
+        </h1>
+        <h3 class="text-black dark:text-white text-sm sm:text-xl mb-4">{i18n.PAGE_NOT_FOUND}</h3>
+        <SocialPill href={translatePath('/')} target="_self">
+            <ArrowLeft class="size-5 sm:size-6" />
+            {i18n.BACK_HOME}
+        </SocialPill>
+    </SectionContainer>
+</Layout404>

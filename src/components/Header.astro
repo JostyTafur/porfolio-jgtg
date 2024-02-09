@@ -10,17 +10,17 @@ const navItems = [
   {
     title: i18n.FORMACION_NAV,
     label: "formacion",
-    url: "#experience",
+    url: i18n.FORMACION_LINK,
   },
   {
     title: i18n.PROYECTOS_NAV,
     label: "proyectos",
-    url: "#proyectos",
+    url: i18n.PROYECTOS_LINK,
   },
   {
     title: i18n.SOBRE_MI_NAV,
     label: "sobre-mi",
-    url: "#about-me",
+    url: i18n.SOBRE_MI_LINK,
   },
 ];
 ---
@@ -34,7 +34,7 @@ const navItems = [
     aria-label="Toggle menu"
   >
     <svg
-      class="w-6 h-6"
+      class="w-8 h-8"
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ const navItems = [
       {
         navItems.map((link) => (
           <a
-            class="relative block px-2 py-2 transition hover:text-green-500 dark:hover:text-yellow-300"
+            class="relative block px-2 py-1 text-lg sm:text-base transition hover:text-green-500 dark:hover:text-yellow-300"
             aria-label={link.label}
             href={link.url}
           >

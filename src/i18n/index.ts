@@ -7,7 +7,6 @@ const LANGUAJES = {
 }
 
 export const geti18n = ({currentLocale = "es"} : { currentLocale: string | undefined}) => {
-    if (currentLocale === LANGUAJES.ENGLISH) return english
-    if (currentLocale === LANGUAJES.SPANISH) return spanish
+    if (currentLocale === LANGUAJES.ENGLISH) return {...spanish, ...english}
     return spanish
 }
