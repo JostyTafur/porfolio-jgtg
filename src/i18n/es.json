@@ -7,6 +7,9 @@
   "BADGE_TEXT": "Disponible para trabajar",
   "CONTACT": "Contáctame",
   "FORM_ACADEMICA": "Formación Académica",
+  "TECHS": "Tecnologías",
+  "LENGUAJES_CONOCIDOS": "Lenguajes conocidos",
+  "FRAMEWORKS_CONOCIDOS": "Herramientas conocidas",
   "PROYECTOS": "Proyectos",
   "SOBRE_MI": "Sobre mi",
   "FORMACION_NAV": "Formación",
@@ -15,6 +18,8 @@
   "PROYECTOS_LINK": "/#projects",
   "SOBRE_MI_NAV": "Sobre mÍ",
   "SOBRE_MI_LINK": "/#about-me",
+  "TECHS_NAV": "Tecnologías",
+  "TECHS_LINK": "/#technologies",
   "SABER_MAS": "Saber más",
   "EXPERIENCE": [
     {

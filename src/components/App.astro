@@ -8,6 +8,8 @@ import Projects from "../components/Projects.astro";
 import ProfileCheck from "@/icons/ProfileCheck.astro";
 import AboutMe from "@/components/AboutMe.astro";
 import Books from "@/icons/Books.astro";
+import Apps from "@/icons/Apps.astro";
+import Techs from "@/components/Techs.astro";
 
 import { geti18n } from "../i18n/"
 
@@ -30,10 +32,16 @@ const i18n = geti18n({currentLocale})
       </h2>
       <Experience />
     </SectionContainer>
-
-    <SectionContainer id="projects">
+    <SectionContainer id="technologies">
       <h2 class="text-black dark:text-white  text-3xl font-semibold mb-8 flex gap-x-3 items-center">
         <CodeIcon class="size-7" />
+        {i18n.TECHS}
+      </h2>
+      <Techs />
+    </SectionContainer>
+    <SectionContainer id="projects">
+      <h2 class="text-black dark:text-white  text-3xl font-semibold mb-8 flex gap-x-3 items-center">
+        <Apps class="size-7" />
         {i18n.PROYECTOS}
       </h2>
       <Projects />

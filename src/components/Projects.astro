@@ -1,14 +1,14 @@
 ---
-import NextJS from "../icons/NextJS.astro"
-import Tailwind from "../icons/Tailwind.astro"
-import Angular from "../icons/Angular.astro"
-import AstroIcon from "../icons/AstroIcon.astro"
-import Flutter from "../icons/Flutter.astro"
-import Spring from "../icons/Spring.astro"
+import NextJS from "../icons/technologies/NextJS.astro"
+import Tailwind from "../icons/technologies/Tailwind.astro"
+import AstroIcon from "../icons/technologies/AstroIcon.astro"
+import Flutter from "../icons/technologies/Flutter.astro"
+import Spring from "../icons/technologies/Spring.astro"
 import SocialPill from "../components/SocialPill.astro"
 import GithubIcon from "../icons/Github.astro"
+import AngularIcon from "@/icons/technologies/Angular.astro"
 import TableRowIcon from "../icons/TableRow.astro"
-import TypeScript from "@/icons/TypeScript.astro"
+import TypeScript from "@/icons/languages/TypeScript.astro"
 import VisualCode from "@/icons/VisualCode.astro"
 import { geti18n } from "../i18n/"
 
@@ -29,7 +29,7 @@ const TAGS = {
     ANGULAR: {
         name: "Angular",
         class: "bg-red-600 text-white",
-        icon: Angular,
+        icon: AngularIcon,
     },
     ASTRO: {
         name: "Astro",
@@ -87,7 +87,7 @@ const PROJECTS = i18n.PROJECTS_LIST.map((project) => {
                     </div>
                     <div class="w-full md:w-1/2 md:max-w-lg">
                         <h3 class="text-2xl font-semibold dark:text-orange-300 text-green-600 mb-2">{title}</h3>
-                        <ul class="flex gap-x-2 flex-row my-4">
+                        <ul class="flex gap-2 flex-row my-4 flex-wrap">
                             {tags.map((tag:any) => 
                                 <li>
                                     <span class={`flex gap-2 rounded-full text-xs ${tag.class} py-2 px-3`}>
