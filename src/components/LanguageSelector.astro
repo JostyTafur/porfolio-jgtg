@@ -23,7 +23,7 @@ const otherLocales = Object.values(LANGUAGES).filter(
     <button
       id="languageButton"
       type="button"
-      class="inline-flex text-sm justify-start items-center w-full gap-x-2 px-3 py-2 text-gray-600 dark:text-gray-200 font-normal hover:text-green-500 dark:hover:text-yellow-400"
+      class="inline-flex text-sm justify-start items-center w-full gap-x-2 px-3 py-2 text-gray-800 dark:text-gray-200 font-normal hover:text-green-500 dark:hover:text-yellow-400"
       aria-expanded="false"
       aria-haspopup="true"
     >
@@ -31,13 +31,13 @@ const otherLocales = Object.values(LANGUAGES).filter(
       <span class="hidden md:block">{currentLocaleData.name}</span>
     </button>
     <div id="languageList"
-        class="hidden text-sm w-full absolute scale-80 top-10 right-0 rounded-md border border-gray-100 bg-white/70 dark:bg-gray-900/70 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md">
+        class="hidden text-sm w-full absolute top-10 right-0 rounded-md border border-gray-100 bg-white/70 dark:bg-gray-900/70 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md">
       <ul>
         {
           otherLocales.map((locale) => (
             <li class="px-1 py-1">
               <a
-                class="inline-flex justify-start items-center w-full gap-x-2 text-gray-500 dark:text-white hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 font-normal rounded-sm px-2 py-1.5"
+                class="inline-flex justify-start items-center w-full gap-x-2 text-gray-800 dark:text-white hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 font-normal rounded-sm px-2 py-1.5"
                 href={translatePath(`/${route ? route : ""}`, locale.code)}
               >
                 <locale.flag />

@@ -6,20 +6,21 @@ interface Technology {
 }
 
 interface Props {
-  technologies: Technology[];
+  array: Technology[];
+  styleInfinite: string;
 }
 
-const { technologies } = Astro.props;
+const { array, styleInfinite } = Astro.props;
 ---
 
 <div
   class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
 >
   <ul
-    class="flex items-center justify-center md:justify-start [&_li]:mx-5 sm:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+    class={`flex items-center justify-center md:justify-start [&_li]:mx-5 sm:[&_li]:mx-8 [&_img]:max-w-none ${styleInfinite}`}
   >
     {
-      technologies.map((tech:any) => (
+      array.map((tech:any) => (
         <li class="flex flex-col items-center justify-center gap-y-2 text-center">
           <tech.iconTech class="size-10 sm:size-12 text-white" />
         </li>
@@ -27,11 +28,11 @@ const { technologies } = Astro.props;
     }
   </ul>
   <ul
-    class="flex items-center justify-center md:justify-start [&_li]:mx-5 sm:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+    class={`flex items-center justify-center md:justify-start [&_li]:mx-5 sm:[&_li]:mx-8 [&_img]:max-w-none ${styleInfinite}`}
     aria-hidden="true"
   >
     {
-      technologies.map((tech:any) => (
+      array.map((tech:any) => (
         <li class="flex flex-col items-center justify-center gap-y-2">
           <tech.iconTech class="size-10 sm:size-12 text-white" />
         </li>
