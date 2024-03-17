@@ -34,7 +34,7 @@ const technologies = [
   { name: "Tailwind", iconTech: Tailwind,},
   { name: "Angular", iconTech: Angular,},
   { name: "Astro", iconTech: AstroIcon,},
-  { name: "Spring Boot", iconTech: Spring,},
+  { name: "Spring", iconTech: Spring,},
   { name: "Vue", iconTech: Vue,},
   { name: "Dotnet", iconTech: Dotnet},
   { name: "React", iconTech: React}
@@ -46,11 +46,11 @@ const { currentLocale } = Astro
 const i18n = geti18n({currentLocale})
 ---
 <div class="grid grid-cols-1 grid-rows-4 justify-center items-center gap-y-8">
-    <h3 class="text-green-600 dark:text-yellow-200/90 mb-3 font-bold text-xl justify-self-center">
+    <h3 class="text-green-600 dark:text-yellow-300/90 mb-3 font-bold text-xl justify-self-center">
         {i18n.LENGUAJES_CONOCIDOS}
     </h3>
     <Carrousell array={languages} styleInfinite="animate-infinite-scroll"/>
-    <h3 class="text-green-600 dark:text-yellow-200/90 my-3 font-bold text-xl justify-self-center">
+    <h3 class="text-green-600 dark:text-yellow-300/90 my-3 font-bold text-xl justify-self-center">
         {i18n.FRAMEWORKS_CONOCIDOS}
     </h3>
     <Carrousell array={technologies} styleInfinite="animate-infinite-scroll-reverse"/>

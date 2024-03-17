@@ -1,5 +1,4 @@
 ---
-
 interface Technology {
   name: string;
   iconTech: Record<string, any>;
@@ -20,9 +19,10 @@ const { array, styleInfinite } = Astro.props;
     class={`flex items-center justify-center md:justify-start [&_li]:mx-5 sm:[&_li]:mx-8 [&_img]:max-w-none ${styleInfinite}`}
   >
     {
-      array.map((tech:any) => (
+      array.map((tech: any) => (
         <li class="flex flex-col items-center justify-center gap-y-2 text-center">
           <tech.iconTech class="size-10 sm:size-12 text-white" />
+          <h3>{tech.name}</h3>
         </li>
       ))
     }
@@ -32,9 +32,10 @@ const { array, styleInfinite } = Astro.props;
     aria-hidden="true"
   >
     {
-      array.map((tech:any) => (
+      array.map((tech: any) => (
         <li class="flex flex-col items-center justify-center gap-y-2">
           <tech.iconTech class="size-10 sm:size-12 text-white" />
+          <h3>{tech.name}</h3>
         </li>
       ))
     }

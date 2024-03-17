@@ -36,11 +36,13 @@ export const ui = {
 
 export const routes = {
   es: {
+    formation: "formacion",
     experience: "experiencia",
     projects: "proyectos",
     aboutme: "sobre-mi",
   },
   en: {
+    formation: "formation",
     experience: "experience",
     projects: "projects",
     aboutme: "about-me",

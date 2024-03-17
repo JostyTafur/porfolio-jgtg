@@ -13,15 +13,19 @@
   "PROYECTOS": "Proyectos",
   "SOBRE_MI": "Sobre mi",
   "FORMACION_NAV": "Formación",
-  "FORMACION_LINK": "/#experience",
+  "FORMACION_ID": "formacion",
+  "FORMACION_LINK": "/#formacion",
   "PROYECTOS_NAV": "Proyectos",
-  "PROYECTOS_LINK": "/#projects",
+  "PROYECTOS_ID": "proyectos",
+  "PROYECTOS_LINK": "/#proyectos",
   "SOBRE_MI_NAV": "Sobre mÍ",
-  "SOBRE_MI_LINK": "/#about-me",
+  "SOBRE_MI_ID": "sobre-mi",
+  "SOBRE_MI_LINK": "/#sobre-mi",
   "TECHS_NAV": "Tecnologías",
-  "TECHS_LINK": "/#technologies",
+  "TECHS_ID": "tecnologias",
+  "TECHS_LINK": "/#tecnologias",
   "SABER_MAS": "Saber más",
-  "EXPERIENCE": [
+  "FORMATION": [
     {
       "title": "Ingeniería de Software",
       "date": "2020 - Present",
@@ -30,12 +34,14 @@
     {
       "title": "Python for EveryBody",
       "date": "Agosto 2022 - Diciembre 2022",
-      "description": "Curso de Python dictado por la Universidad de Michigan en Coursera. Aprendí a programar en Python y a utilizarlo para resolver problemas reales. Además, aprendí a utilizar herramientas como Jupyter Notebook y GitHub."
+      "description": "Curso de Python dictado por la Universidad de Michigan en Coursera. Aprendí a programar en Python y a utilizarlo para resolver problemas reales. Además, aprendí a utilizar herramientas como Jupyter Notebook y GitHub.",
+      "link": "../../docs/Coursera_Python_for_Everybody.pdf"
     },
     {
       "title": "Art for Videogames",
       "date": "Agosto 2022 - Diciembre 2022",
-      "description": "Curso de arte digital dictado por la Universidad de Michigan en Coursera. Aprendí a utilizar herramientas como Photoshop y Blender para crear arte digital y a aplicar técnicas de diseño de videojuegos."
+      "description": "Curso de arte digital dictado por la Universidad de Michigan en Coursera. Aprendí a utilizar herramientas como Photoshop y Blender para crear arte digital y a aplicar técnicas de diseño de videojuegos.",
+      "link": "../../docs/Coursera_Art_for_Videogames.pdf"
     },
     {
       "title": "Taller de Liderazgo I y II",
@@ -43,6 +49,7 @@
       "description": "Cursos de liderazgo dictados por la Universidad Peruana de Ciencias Aplicadas (UPC). Aprendí a trabajar en equipo, a liderar proyectos y a tomar decisiones en situaciones de incertidumbre."
     }
   ],
+  "EXPERIENCE": [],
   "PROJECTS_LIST": [
     {
       "id": "0",

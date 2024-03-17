@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Experience from "../components/Experience.astro";
+import Formation from "../components/Formation.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Hero from "./Hero.astro";
 import CodeIcon from "../icons/Code.astro";
@@ -11,43 +12,48 @@ import Books from "@/icons/Books.astro";
 import Apps from "@/icons/Apps.astro";
 import Techs from "@/components/Techs.astro";
 
-import { geti18n } from "../i18n/"
+import { geti18n } from "../i18n/";
 
-const { currentLocale } = Astro
-const i18n = geti18n({currentLocale})
+const { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
 ---
 
-<Layout
-    title={i18n.SEO_TITLE}
-    description={i18n.SEO_DESCRIPTION}
->
+<Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
   <main class="px-4">
     <SectionContainer id="home" class="py-44 pb-32 flex flex-col">
-        <Hero />
+      <Hero />
     </SectionContainer>
-    <SectionContainer id="experience">
-      <h2 class="text-3xl font-semibold mb-8 flex gap-x-3 items-center text-black dark:text-white ">
+    <SectionContainer id={i18n.FORMACION_ID}>
+      <h2
+        class="text-3xl font-semibold mb-8 flex gap-x-3 items-center text-black dark:text-white"
+      >
         <Books class="size-7" />
         {i18n.FORM_ACADEMICA}
       </h2>
-      <Experience />
+      <Formation />
     </SectionContainer>
-    <SectionContainer id="technologies">
-      <h2 class="text-black dark:text-white  text-3xl font-semibold mb-8 flex gap-x-3 items-center">
+    <SectionContainer id={i18n.TECHS_ID}>
+      <h2
+        class="text-black dark:text-white text-3xl font-semibold mb-8 flex gap-x-3 items-center"
+      >
         <CodeIcon class="size-7" />
         {i18n.TECHS}
       </h2>
       <Techs />
     </SectionContainer>
-    <SectionContainer id="projects">
-      <h2 class="text-black dark:text-white  text-3xl font-semibold mb-8 flex gap-x-3 items-center">
+    <SectionContainer id={i18n.PROYECTOS_ID}>
+      <h2
+        class="text-black dark:text-white text-3xl font-semibold mb-8 flex gap-x-3 items-center"
+      >
         <Apps class="size-7" />
         {i18n.PROYECTOS}
       </h2>
       <Projects />
     </SectionContainer>
-    <SectionContainer id="about-me">
-      <h2 class="text-3xl font-semibold mb-8 flex gap-x-3 items-center text-black dark:text-white ">
+    <SectionContainer id={i18n.SOBRE_MI_ID}>
+      <h2
+        class="text-3xl font-semibold mb-8 flex gap-x-3 items-center text-black dark:text-white"
+      >
         <ProfileCheck class="size-7" />
         {i18n.SOBRE_MI}
       </h2>

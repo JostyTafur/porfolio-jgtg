@@ -12,15 +12,19 @@
   "PROYECTOS": "Projects",
   "SOBRE_MI": "About me",
   "FORMACION_NAV": "Formation",
-  "FORMACION_LINK": "/en/#experience",
+  "FORMACION_ID": "formation",
+  "FORMACION_LINK": "/en/#formation",
   "PROYECTOS_NAV": "Projects",
+  "PROYECTOS_ID": "projects",
   "PROYECTOS_LINK": "/en/#projects",
   "SOBRE_MI_NAV": "About me",
+  "SOBRE_MI_ID": "about-me",
   "SOBRE_MI_LINK": "/en/#about-me",
   "TECHS_NAV": "Technologies",
+  "TECHS_ID": "technologies",
   "TECHS_LINK": "/en/#technologies",
-  "SABER_MAS": "Know more",
-  "EXPERIENCE": [
+  "SABER_MAS": "Learn more",
+  "FORMATION": [
     {
       "title": "Software Engineering",
       "date": "2020 - Present",
@@ -29,17 +33,26 @@
     {
       "title": "Python for EveryBody",
       "date": "August 2022 - December 2022",
-      "description": "Python course taught by the University of Michigan on Coursera. I learned how to program in Python and use it to solve real problems. In addition, I learned how to use tools like Jupyter Notebook and GitHub."
+      "description": "Python course taught by the University of Michigan on Coursera. I learned how to program in Python and use it to solve real problems. In addition, I learned how to use tools like Jupyter Notebook and GitHub.",
+      "link": "../../docs/Coursera_Python_for_Everybody.pdf"
     },
     {
       "title": "Art for Videogames",
       "date": "August 2022 - December 2022",
-      "description": "Digital art course taught by the University of Michigan on Coursera. I learned how to use tools like Photoshop and Blender to create digital art and apply video game design techniques."
+      "description": "Digital art course taught by the University of Michigan on Coursera. I learned how to use tools like Photoshop and Blender to create digital art and apply video game design techniques.",
+      "link": "../../docs/Coursera_Art_for_Videogames.pdf"
     },
     {
       "title": "Taller de Liderazgo I y II",
       "date": "August 2021 - August 2022",
       "description": "Leadership workshop taught by the Peruvian University of Applied Sciences (UPC). I learned about leadership, teamwork, and communication."
+    }
+  ],
+  "EXPERIENCE": [
+    {
+      "title": "Software Engineering",
+      "date": "2020 - Present",
+      "description": "Eighth cycle student at the Peruvian University of Applied Sciences (UPC) studying Software Engineering. Currently, I am looking for pre-professional internships in the area of web development."
     }
   ],
   "PROJECTS_LIST": [
