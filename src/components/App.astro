@@ -23,6 +23,15 @@ const i18n = geti18n({ currentLocale });
     <SectionContainer id="home" class="py-44 pb-32 flex flex-col">
       <Hero />
     </SectionContainer>
+    <SectionContainer id={i18n.EXPERIENCE_ID}>
+      <h2
+        class="text-3xl font-semibold mb-8 flex gap-x-3 items-center text-black dark:text-white"
+      >
+        <Books class="size-7" />
+        {i18n.EXPERIENCIA}
+      </h2>
+      <Experience />
+    </SectionContainer>
     <SectionContainer id={i18n.FORMACION_ID}>
       <h2
         class="text-3xl font-semibold mb-8 flex gap-x-3 items-center text-black dark:text-white"

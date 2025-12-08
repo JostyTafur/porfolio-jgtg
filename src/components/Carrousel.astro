@@ -6,38 +6,99 @@ interface Technology {
 
 interface Props {
   array: Technology[];
-  styleInfinite: string;
+  styleInfinite?: string;
 }
 
 const { array, styleInfinite } = Astro.props;
 ---
 
-<div
-  class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
->
-  <ul
-    class={`flex items-center justify-center md:justify-start [&_li]:mx-5 sm:[&_li]:mx-8 [&_img]:max-w-none ${styleInfinite}`}
-  >
+<div class="w-full px-4 py-8">
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
     {
-      array.map((tech: any) => (
-        <li class="flex flex-col items-center justify-center gap-y-2 text-center">
-          <tech.iconTech class="size-10 sm:size-12 text-white" />
-          <h3 class="text-black dark:text-white">{tech.name}</h3>
-        </li>
+      array.map((tech: any, index: number) => (
+        <div
+          class="tech-card group relative rounded-xl bg-gradient-to-br from-orange-50 to-orange-100 dark:from-slate-800 dark:to-slate-900 p-6 sm:p-8 flex flex-col items-center justify-center gap-3 cursor-pointer overflow-hidden"
+          data-index={index}
+        >
+          {/* Efecto de fondo animado */}
+          <div class="absolute inset-0 bg-gradient-to-r from-orange-500/0 via-orange-500/20 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+          {/* Contenido */}
+          <div class="relative z-10 flex flex-col items-center justify-center gap-3">
+            <div class="tech-icon">
+              <tech.iconTech class="size-10 sm:size-12 text-orange-500 dark:text-yellow-400" />
+            </div>
+            <h3 class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 text-center line-clamp-2">
+              {tech.name}
+            </h3>
+          </div>
+
+          {/* Borde animado */}
+          <div class="absolute inset-0 rounded-xl border-2 border-orange-300 dark:border-yellow-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </div>
       ))
     }
-  </ul>
-  <ul
-    class={`flex items-center justify-center md:justify-start [&_li]:mx-5 sm:[&_li]:mx-8 [&_img]:max-w-none ${styleInfinite}`}
-    aria-hidden="true"
-  >
-    {
-      array.map((tech: any) => (
-        <li class="flex flex-col items-center justify-center gap-y-2">
-          <tech.iconTech class="size-10 sm:size-12 text-white" />
-          <h3 class="text-black dark:text-white">{tech.name}</h3>
-        </li>
-      ))
-    }
-  </ul>
+  </div>
 </div>
+
+<script>
+  import gsap from "gsap";
+
+  const techCards = document.querySelectorAll(".tech-card");
+
+  // Animación de entrada con stagger
+  gsap.from(techCards, {
+    duration: 0.6,
+    opacity: 0,
+    y: 30,
+    stagger: 0.05,
+    ease: "back.out",
+  });
+
+  // Animación de hover en cada tarjeta
+  techCards.forEach((card) => {
+    const icon = card.querySelector(".tech-icon");
+
+    card.addEventListener("mouseenter", () => {
+      // Escalar la tarjeta
+      gsap.to(card, {
+        scale: 1.08,
+        duration: 0.4,
+        ease: "power2.out",
+      });
+
+      // Rotar el icono
+      gsap.to(icon, {
+        rotation: 360,
+        duration: 0.6,
+        ease: "back.out",
+      });
+    });
+
+    card.addEventListener("mouseleave", () => {
+      // Volver al tamaño original
+      gsap.to(card, {
+        scale: 1,
+        duration: 0.4,
+        ease: "power2.out",
+      });
+
+      // Resetear rotación del icono
+      gsap.to(icon, {
+        rotation: 0,
+        duration: 0.4,
+        ease: "power2.out",
+      });
+    });
+
+    // Click para animar
+    card.addEventListener("click", () => {
+      gsap.to(card, {
+        scale: 0.95,
+        duration: 0.2,
+        yoyo: true,
+        repeat: 1,
+      });
+    });
+  });
+</script>

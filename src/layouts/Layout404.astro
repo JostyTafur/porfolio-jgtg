@@ -1,7 +1,7 @@
 ---
-import "@fontsource-variable/onest/";
+import "@fontsource-variable/onest";
 
-const { currentLocale } = Astro
+const { currentLocale } = Astro;
 ---
 
 <!doctype html>
@@ -58,20 +58,19 @@ const { currentLocale } = Astro
 </style>
 
 <script is:inline>
-    const matchMedia = window.matchMedia("(prefers-color-scheme: dark)")
-    const getThemePreference = () => {
+  const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
+  const getThemePreference = () => {
     if (typeof localStorage !== "undefined") {
-        return localStorage.getItem("theme") ?? "system";
+      return localStorage.getItem("theme") ?? "system";
     }
     return window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
-    };
+      ? "dark"
+      : "light";
+  };
 
-    const themePreference = getThemePreference();
-    const isDark =
+  const themePreference = getThemePreference();
+  const isDark =
     themePreference === "dark" ||
     (themePreference === "system" && matchMedia.matches);
-    document.documentElement.classList[isDark ? "add" : "remove"]("dark");
-
+  document.documentElement.classList[isDark ? "add" : "remove"]("dark");
 </script>

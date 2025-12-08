@@ -31,6 +31,7 @@ const navItems = [
 ---
 
 <header
+  id="header"
   class="fixed top-0 right-5 z-10 flex flex-col items-end sm:items-center justify-center w-full mx-auto mt-2 gap-x-5"
 >
   <button
@@ -38,12 +39,7 @@ const navItems = [
     id="menu-nav"
     aria-label="Toggle menu"
   >
-    <svg
-      class="w-8 h-8"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -51,7 +47,9 @@ const navItems = [
         d="M4 6h16M4 12h16m-7 6h7"></path>
     </svg>
   </button>
-  <section class="hidden sm:flex items-center rounded-md sm:rounded-full px-2 border sm:border-none border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur sm:bg-transparent sm:dark:bg-transparent mt-2 sm:mt-0 sm:backdrop-blur-0 sm:shadow-none">
+  <section
+    class="hidden sm:flex items-center rounded-md sm:rounded-full px-2 border sm:border-none border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur sm:bg-transparent sm:dark:bg-transparent mt-2 sm:mt-0 sm:backdrop-blur-0 sm:shadow-none"
+  >
     <nav
       class="sm:w-full sm:relative sm:top-0 flex flex-col sm:flex-row text-sm font-medium sm:rounded-full rounded-md text-gray-800 dark:text-gray-200 justify-center items-center"
     >
@@ -127,13 +125,12 @@ const navItems = [
 </script>
 
 <style>
-
   @media (width > 640px) {
     section {
-    animation: nav-shadown 1s linear both;
-    animation-timeline: scroll();
-    animation-range: 0 100px;
-  }
+      animation: nav-shadown 1s linear both;
+      animation-timeline: scroll();
+      animation-range: 0 100px;
+    }
   }
 
   @keyframes nav-shadown {

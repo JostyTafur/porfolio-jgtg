@@ -1,12 +1,12 @@
-
 {
   "SEO_TITLE": "Portafolio de Josty Tafur - Ingenieria de software",
   "SEO_DESCRIPTION": "Portafolio de Josty Tafur, Estudiante de Octavo ciclo en la Universidad Peruana de ciencias Aplicadas, con ganas de aprender y mejorar profesionalmente",
   "HOME_TITLE": "Hey, soy <span>Josty Tafur</span>",
-  "HOME_SUBTITLE": "<span>Estudiante de Ingeniería de Software</span> en la Universidad Peruana de Ciencias Aplicadas (UPC)<span></span>. De Lima, Perú 🇵🇪.",
+  "HOME_SUBTITLE": "<span>Bachiller en Ingeniería de Software</span> por la Universidad Peruana de Ciencias Aplicadas (UPC)<span></span>. De Lima, Perú 🇵🇪.",
   "BADGE_TEXT": "Disponible para trabajar",
   "CONTACT": "Contáctame",
   "FORM_ACADEMICA": "Formación Académica",
+  "EXPERIENCIA": "Experiencia",
   "TECHS": "Tecnologías",
   "LENGUAJES_CONOCIDOS": "Lenguajes conocidos",
   "FRAMEWORKS_CONOCIDOS": "Herramientas conocidas",
@@ -15,6 +15,9 @@
   "FORMACION_NAV": "Formación",
   "FORMACION_ID": "formacion",
   "FORMACION_LINK": "/#formacion",
+  "EXPERIENCE_NAV": "Experiencia",
+  "EXPERIENCE_ID": "experiencia",
+  "EXPERIENCE_LINK": "/#experiencia",
   "PROYECTOS_NAV": "Proyectos",
   "PROYECTOS_ID": "proyectos",
   "PROYECTOS_LINK": "/#proyectos",
@@ -28,8 +31,8 @@
   "FORMATION": [
     {
       "title": "Ingeniería de Software",
-      "date": "2020 - Present",
-      "description": "Estudiante de octavo ciclo en la Universidad Peruana de Ciencias Aplicadas (UPC) en la carrera de Ingeniería de Software. Actualmente, me encuentro en la búsqueda de prácticas preprofesionales en el área de desarrollo web."
+      "date": "Agosto 2020 - Julio 2025",
+      "description": "Bachiller en Ingeniería de Software por la Universidad Peruana de Ciencias Aplicadas (UPC). He completado mi formación académica con enfoque en desarrollo web y arquitectura de software."
     },
     {
       "title": "Python for EveryBody",
@@ -49,7 +52,23 @@
       "description": "Cursos de liderazgo dictados por la Universidad Peruana de Ciencias Aplicadas (UPC). Aprendí a trabajar en equipo, a liderar proyectos y a tomar decisiones en situaciones de incertidumbre."
     }
   ],
-  "EXPERIENCE": [],
+  "EXPERIENCE": [
+    {
+      "title": "Buildsoft",
+      "date": "Octubre 2025 - Presente",
+      "description": "Analista Programador N1. Participación en la migración de sistemas corporativos complejos, abarcando tanto aspectos de frontend como backend. Trabajo colaborativo en equipo para la modernización y optimización de plataformas empresariales."
+    },
+    {
+      "title": "Clínica Liga Contra el Cáncer",
+      "date": "Abr 2024 - Feb 2025",
+      "description": "Practicante de Ingeniería de Software. Soporte en múltiples áreas del desarrollo del software, desde el análisis funcional, pasando por el diseño de interfaces y el desarrollo del sistema."
+    },
+    {
+      "title": "Pandero S.A.C.",
+      "date": "Dic 2023 - Ene 2024",
+      "description": "Practicante de T.I. Realización de reportes de ventas, generación de gráficas de ventas mensuales y soporte gerencial."
+    }
+  ],
   "PROJECTS_LIST": [
     {
       "id": "0",
@@ -62,9 +81,9 @@
   ],
   "BUTTON_CODE": "Código",
   "BUTTON_PROYECT": "Ver proyecto",
-  "ABOUT_ME_FIRST_P": "Me llamo Josty Tafur Gonzales y estoy estudiando la carrera de <strong>Ingenieria de Software</strong>. Decidí ingresar a este mundo porque me disfruto mucho programando y me gusta la idea de <strong>crear aplicaciones que puedan ayudar a las personas.</strong>",
-  "ABOUT_ME_SECOND_P": "Me encanta desarrollar aplicaciones web y siempre <strong>me preocupo por el diseño y arquitectura</strong> de una aplicación antes de crearla. De esta manera, he ayudado a muchos compañeros en la creación de sus proyectos, enseñando y aprendiendo de ellos tambien.",
-  "ABOUT_ME_THIRD_P": "Mi curiosidad me ha llevado a aprender sobre diferentes temas, tales como <strong>Machine Learning, inteligencia artificial, creacion de extensiones en VS Code, diseño de assets para videojuegos, ciberseguridad</strong>, entre otros.",
+  "ABOUT_ME_FIRST_P": "Me llamo Josty Tafur Gonzales y soy <strong>Ingeniero de Software</strong> con formación en la Universidad Peruana de Ciencias Aplicadas (UPC). Tengo una <strong>pasión genuina por crear soluciones tecnológicas que generen impacto</strong> y resuelvan problemas reales en el mundo empresarial.",
+  "ABOUT_ME_SECOND_P": "Tengo sólidos conocimientos en <strong>desarrollo full-stack y arquitectura de software</strong>, y he contribuido en diversos proyectos a la modernización de sistemas corporativos y optimización de procesos. Mi objetivo es <strong>desarrollar soluciones escalables, mantenibles y eficientes</strong> que se adapten a las necesidades del negocio.",
+  "ABOUT_ME_THIRD_P": "Soy un profesional <strong>autodidacta y curioso</strong> que continuamente expande sus conocimientos en tecnologías emergentes como <strong>Machine Learning, inteligencia artificial, arquitectura en la nube, y patrones de diseño avanzados</strong>. Creo en el trabajo colaborativo y en la importancia de compartir conocimiento con el equipo para alcanzar objetivos comunes.",
   "PAGE_NOT_FOUND": "Página no encontrada",
   "BACK_HOME": "Volver a casa"
 }

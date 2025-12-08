@@ -2,10 +2,11 @@
   "SEO_TITLE": "Portfolio of Josty Tafur - Software Engineer",
   "SEO_DESCRIPTION": "Portfolio of Josty Tafur, Student of eighth semester at Universidad Peruana de Ciencias Aplicadas, eager to learn and improve professionally",
   "HOME_TITLE": "Hey, I'm <span>Josty Tafur</span>",
-  "HOME_SUBTITLE": "<span class='text-yellow-300'>Software Engineering Student</span> at the Peruvian University of Applied Sciences (UPC)<span class='text-orange-300'></span>. From Lima, Peru 🇵🇪.",
+  "HOME_SUBTITLE": "<span class='text-yellow-300'>Software Engineering Bachelor's Degree</span> from the Peruvian University of Applied Sciences (UPC)<span class='text-orange-300'></span>. From Lima, Peru 🇵🇪.",
   "BADGE_TEXT": "Available for work",
   "CONTACT": "Contact me",
   "FORM_ACADEMICA": "Academic Formation",
+  "EXPERIENCIA": "Experience",
   "TECHS": "Technologies",
   "LENGUAJES_CONOCIDOS": "Known languages",
   "FRAMEWORKS_CONOCIDOS": "Known tools",
@@ -14,6 +15,9 @@
   "FORMACION_NAV": "Formation",
   "FORMACION_ID": "formation",
   "FORMACION_LINK": "/en/#formation",
+  "EXPERIENCE_NAV": "Experience",
+  "EXPERIENCE_ID": "experience",
+  "EXPERIENCE_LINK": "/en/#experience",
   "PROYECTOS_NAV": "Projects",
   "PROYECTOS_ID": "projects",
   "PROYECTOS_LINK": "/en/#projects",
@@ -27,8 +31,8 @@
   "FORMATION": [
     {
       "title": "Software Engineering",
-      "date": "2020 - Present",
-      "description": "Eighth cycle student at the Peruvian University of Applied Sciences (UPC) studying Software Engineering. Currently, I am looking for pre-professional internships in the area of web development."
+      "date": "2020 - 2025",
+      "description": "Bachelor's degree in Software Engineering from the Peruvian University of Applied Sciences (UPC). I have completed my academic training with a focus on web development and software architecture."
     },
     {
       "title": "Python for EveryBody",
@@ -50,9 +54,19 @@
   ],
   "EXPERIENCE": [
     {
-      "title": "Software Engineering",
-      "date": "2020 - Present",
-      "description": "Eighth cycle student at the Peruvian University of Applied Sciences (UPC) studying Software Engineering. Currently, I am looking for pre-professional internships in the area of web development."
+      "title": "Buildsoft",
+      "date": "October 2025 - Present",
+      "description": "Level 1 Systems Analyst. Participation in the migration of complex corporate systems, covering both frontend and backend aspects. Collaborative teamwork in the modernization and optimization of enterprise platforms."
+    },
+    {
+      "title": "Clínica Liga Contra el Cáncer",
+      "date": "Apr 2024 - Feb 2025",
+      "description": "Software Engineering Intern. Support in multiple areas of software development, from functional analysis, interface design and system development."
+    },
+    {
+      "title": "Pandero S.A.C.",
+      "date": "Dec 2023 - Jan 2024",
+      "description": "IT Intern. Sales reporting, generation of monthly sales charts and managerial support."
     }
   ],
   "PROJECTS_LIST": [
@@ -67,9 +81,9 @@
   ],
   "BUTTON_CODE": "Code",
   "BUTTON_PROYECT": "See project",
-  "ABOUT_ME_FIRST_P": "My name is Josty Tafur Gonzales and I am studying <strong>Software Engineering</strong>. I decided to enter this world because I really enjoy programming and I like the idea of <strong>creating applications that can help people.</strong>",
-  "ABOUT_ME_SECOND_P": "I love developing web applications and I always worry about the design and architecture of an application before creating it. In this way, I have helped many colleagues in the creation of their projects, teaching and learning from them too.",
-  "ABOUT_ME_THIRD_P": "My curiosity has led me to learn about different topics, such as <strong>Machine Learning, artificial intelligence, creation of extensions in VS Code, design of assets for video games, cybersecurity</strong>, among others.",
+  "ABOUT_ME_FIRST_P": "My name is Josty Tafur Gonzales and I am a <strong>Software Engineer</strong> trained at the Peruvian University of Applied Sciences (UPC). I have a <strong>genuine passion for creating technological solutions that generate impact</strong> and solve real problems in the business environment.",
+  "ABOUT_ME_SECOND_P": "I have solid knowledge in <strong>full-stack development and software architecture</strong>, and I have contributed in various projects to the modernization of corporate systems and process optimization. My goal is to <strong>develop scalable, maintainable and efficient solutions</strong> that adapt to business needs.",
+  "ABOUT_ME_THIRD_P": "I am a <strong>self-taught and curious professional</strong> who continuously expands his knowledge in emerging technologies such as <strong>Machine Learning, artificial intelligence, cloud architecture, and advanced design patterns</strong>. I believe in collaborative work and the importance of sharing knowledge with the team to achieve common goals.",
   "PAGE_NOT_FOUND": "Page not found",
   "BACK_HOME": "Back to home"
 }
